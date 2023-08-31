@@ -24,7 +24,7 @@ export async function createZipUploadStream(
   uploadSpecification: UploadZipSpecification[]
 ): Promise<ZipUploadStream> {
   const zip = archiver.create('zip', {
-    zlib: {level: 9} // Sets the compression level.
+    zlib: {level: 1} // Sets the compression level.
     // Available options are 0-9
     // 0 => no compression
     // 1 => fastest with low compression
